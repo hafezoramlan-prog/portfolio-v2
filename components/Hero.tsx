@@ -18,6 +18,14 @@ export default function Hero() {
           {profile.tagline}
         </p>
 
+        
+          href="/resume.pdf"
+          download
+          className="mt-6 inline-flex items-center gap-2 bg-safety text-ink text-sm font-600 px-5 py-3 rounded-full hover:opacity-90 transition-opacity"
+        >
+          Download resume ↓
+        </a>
+
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px bg-linelight border border-linelight">
           {fields.map(([label, value]) => (
             <div key={label} className="bg-panel px-4 py-3">
