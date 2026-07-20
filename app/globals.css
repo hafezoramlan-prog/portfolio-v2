@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  background-color: #ECEAE4;
+  color: #14171C;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.field-label {
+  @apply font-mono text-[11px] tracking-widest2 uppercase text-ink/50;
+}
+
+.hairline {
+  @apply border-line;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #F2A900;
+  outline-offset: 2px;
+}
